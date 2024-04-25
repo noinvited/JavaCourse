@@ -21,14 +21,14 @@ public class Main {
             Sort.bubbleSort(testString);
             System.out.println("Отсортированный String[]: " + Arrays.toString(testString) + "\n");
 
-            MyClass[] testClass = new MyClass[4];
-            testClass[0] = new MyClass(3L, "Nick", 5);
-            testClass[1] = new MyClass(2L, "Ann", 33);
-            testClass[2] = new MyClass(1L, "Den", 2);
-            testClass[3] = new MyClass(2L, "Bob", 9);
-            System.out.println("Вывод примера для MyClass[]: " + Arrays.toString(testClass));
-            Sort.bubbleSort(testClass);
-            System.out.println("Отсортированный MyClass[]: " + Arrays.toString(testClass) + "\n");
+            Human[] testHuman = new Human[4];
+            testHuman[0] = new Human(3L, "Nick", 5);
+            testHuman[1] = new Human(2L, "Ann", 33);
+            testHuman[2] = new Human(1L, "Den", 2);
+            testHuman[3] = new Human(2L, "Bob", 9);
+            System.out.println("Вывод примера для Human[]: " + Arrays.toString(testHuman));
+            Sort.bubbleSort(testHuman);
+            System.out.println("Отсортированный Human[]: " + Arrays.toString(testHuman) + "\n");
 
             String[] testString2 = new String[]{"Всем", null, "это", "тестовый", null};
             System.out.println("Вывод примера для String[] с null элементами: " + Arrays.toString(testString2));

@@ -3,14 +3,14 @@ package ru.turing.courses.lesson5;
 import java.util.Objects;
 
 /**
- * Класс содержащий человека, его реутинг и id
+ * Класс содержащий человека, его рейтинг и id
  */
-public class MyClass {
+public class Human {
     private Long id;
     private String name;
     private Integer rating;
 
-    public MyClass(Long id, String name, Integer rating) {
+    public Human(Long id, String name, Integer rating) {
         this.id = id;
         this.name = name;
         this.rating = rating;
@@ -20,8 +20,8 @@ public class MyClass {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MyClass myClass = (MyClass) o;
-        return Objects.equals(id, myClass.id) && Objects.equals(name, myClass.name) && Objects.equals(rating, myClass.rating);
+        Human human = (Human) o;
+        return Objects.equals(id, human.id) && Objects.equals(name, human.name) && Objects.equals(rating, human.rating);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class MyClass {
 
     @Override
     public String toString() {
-        return "MyClass{" +
+        return "Human{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", rating=" + rating +
